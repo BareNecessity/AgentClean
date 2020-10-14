@@ -8,7 +8,7 @@
 
 
     <ImageView
-        android:id="@+id/WalletImage"
+        android:id="@+id/wallet_img"
         android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/WalletTextBalance"
+        android:id="@+id/records_wallet_balance_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Wallet Balance"
@@ -30,11 +30,11 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/WalletImage"/>
+        app:layout_constraintStart_toEndOf="@+id/wallet_img"/>
 
 
     <ImageView
-        android:id="@+id/UserImage"
+        android:id="@+id/user_img"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@drawable/ic_baseline_face_24"
@@ -45,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
-        android:id="@+id/RecordsBalance"
+        android:id="@+id/records_balance_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="#1,000,035"
@@ -55,7 +55,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/WalletImage"
+        app:layout_constraintTop_toBottomOf="@+id/wallet_img"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
@@ -67,12 +67,12 @@
         android:layout_marginTop="15dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/UserImage"
+        app:layout_constraintTop_toBottomOf="@+id/user_img"
         app:layout_constraintEnd_toEndOf="parent"/>
 
 
     <TextView
-        android:id="@+id/TextFundWallet"
+        android:id="@+id/fund_wallet_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Fund Wallet"
@@ -81,11 +81,11 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/RecordsBalance"
+        app:layout_constraintTop_toBottomOf="@+id/records_balance_tv"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
-        android:id="@+id/TextLaundryRecords"
+        android:id="@+id/laundry_records_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Laundry Records"
@@ -93,25 +93,25 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/TextFundWallet"
+        app:layout_constraintTop_toBottomOf="@+id/fund_wallet_tv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <ImageView
-        android:id="@+id/Reception"
+        android:id="@+id/reception_img"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:background="@drawable/recent"
-        app:layout_constraintTop_toBottomOf="@+id/TextLaundryRecords"
+        app:layout_constraintTop_toBottomOf="@+id/laundry_records_tv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
     <TextView
-        android:id="@+id/NoRecordsYet"
+        android:id="@+id/no_records_yet_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="You do not have laundry \n      records/orders yet"
         android:textSize="25sp"
-        app:layout_constraintTop_toBottomOf="@+id/Reception"
+        app:layout_constraintTop_toBottomOf="@+id/reception_img"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -123,10 +123,10 @@
         android:background="@drawable/request"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NoRecordsYet">
+        app:layout_constraintTop_toBottomOf="@+id/no_records_yet_tv">
 
         <TextView
-            android:id="@+id/TextNewRequest"
+            android:id="@+id/new_request_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -141,13 +141,13 @@
 
 
         <ImageButton
-            android:id="@+id/addWalletBalance"
+            android:id="@+id/add_wallet_balance_img_bt"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:background="@drawable/ic_baseline_add"
-            app:layout_constraintStart_toEndOf="@+id/TextNewRequest"
+            app:layout_constraintStart_toEndOf="@+id/new_request_tv"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
 

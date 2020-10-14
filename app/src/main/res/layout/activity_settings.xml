@@ -7,7 +7,7 @@
     tools:context=".Settings">
 
     <ImageView
-        android:id="@+id/SettingsBackArrow"
+        android:id="@+id/settings_back_arrow"
         android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -26,12 +26,12 @@
         android:layout_marginTop="32dp"
         android:layout_marginStart="80dp"
         android:layout_marginEnd="80dp"
-        app:layout_constraintStart_toEndOf="@id/SettingsBackArrow"
+        app:layout_constraintStart_toEndOf="@id/settings_back_arrow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:id="@+id/SettingsText"
+        android:id="@+id/settings_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Settings"
@@ -44,7 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/AboutConstraint"
+        android:id="@+id/about_cl"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/settings"
@@ -53,10 +53,10 @@
         android:layout_marginEnd="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/SettingsText">
+        app:layout_constraintTop_toBottomOf="@id/settings_tv">
 
         <TextView
-            android:id="@+id/AboutTextView"
+            android:id="@+id/about_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="About"
@@ -64,22 +64,22 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/AboutConstraint"
-            app:layout_constraintBottom_toBottomOf="@id/AboutConstraint"/>
+            app:layout_constraintTop_toTopOf="@id/about_cl"
+            app:layout_constraintBottom_toBottomOf="@id/about_cl"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_baseline_arrow_forward_ios_24"
-            app:layout_constraintStart_toEndOf="@id/AboutTextView"
-            app:layout_constraintTop_toTopOf="@id/AboutConstraint"
-            app:layout_constraintBottom_toBottomOf="@id/AboutConstraint"/>
+            app:layout_constraintStart_toEndOf="@id/about_tv"
+            app:layout_constraintTop_toTopOf="@id/about_cl"
+            app:layout_constraintBottom_toBottomOf="@id/about_cl"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/ContactUsConstraint"
+        android:id="@+id/contact_us_cl"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/settings"
@@ -88,10 +88,10 @@
         android:layout_marginEnd="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/AboutConstraint">
+        app:layout_constraintTop_toBottomOf="@id/about_cl">
 
         <TextView
-            android:id="@+id/ContactUsTextView"
+            android:id="@+id/contact_us_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Contact Us"
@@ -107,17 +107,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_baseline_arrow_forward_ios_24"
-            app:layout_constraintStart_toEndOf="@+id/ContactUsTextView"
-            app:layout_constraintEnd_toEndOf="@+id/ContactUsConstraint"
-            app:layout_constraintTop_toTopOf="@+id/ContactUsConstraint"
-            app:layout_constraintBottom_toBottomOf="@+id/ContactUsConstraint"/>
+            app:layout_constraintStart_toEndOf="@+id/contact_us_tv"
+            app:layout_constraintEnd_toEndOf="@+id/contact_us_cl"
+            app:layout_constraintTop_toTopOf="@+id/contact_us_cl"
+            app:layout_constraintBottom_toBottomOf="@+id/contact_us_cl"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/TermsConstraint"
+        android:id="@+id/terms_cl"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/settings"
@@ -126,28 +126,28 @@
         android:layout_marginEnd="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ContactUsConstraint">
+        app:layout_constraintTop_toBottomOf="@+id/contact_us_cl">
 
         <TextView
-            android:id="@+id/TermsPolicyTextView"
+            android:id="@+id/terms_policy_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Terms and Policy"
             android:textSize="25sp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            app:layout_constraintTop_toTopOf="@id/TermsConstraint"
-            app:layout_constraintStart_toStartOf="@+id/TermsConstraint"
-            app:layout_constraintBottom_toBottomOf="@+id/TermsConstraint"/>
+            app:layout_constraintTop_toTopOf="@id/terms_cl"
+            app:layout_constraintStart_toStartOf="@+id/terms_cl"
+            app:layout_constraintBottom_toBottomOf="@+id/terms_cl"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_baseline_arrow_forward_ios_24"
-            app:layout_constraintStart_toEndOf="@+id/TermsPolicyTextView"
-            app:layout_constraintEnd_toEndOf="@+id/TermsConstraint"
-            app:layout_constraintTop_toTopOf="@+id/TermsConstraint"
-            app:layout_constraintBottom_toBottomOf="@+id/TermsConstraint"/>
+            app:layout_constraintStart_toEndOf="@+id/terms_policy_tv"
+            app:layout_constraintEnd_toEndOf="@+id/terms_cl"
+            app:layout_constraintTop_toTopOf="@+id/terms_cl"
+            app:layout_constraintBottom_toBottomOf="@+id/terms_cl"/>
 
 
 
@@ -156,7 +156,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/FeedBackConstraint"
+        android:id="@+id/feed_back_cl"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/settings"
@@ -165,7 +165,7 @@
         android:layout_marginEnd="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TermsConstraint">
+        app:layout_constraintTop_toBottomOf="@+id/terms_cl">
 
         <TextView
             android:layout_width="match_parent"
@@ -175,27 +175,28 @@
             android:layout_marginTop="5dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            app:layout_constraintTop_toTopOf="@+id/FeedBackConstraint"
-            app:layout_constraintStart_toStartOf="@+id/FeedBackConstraint"
-            app:layout_constraintEnd_toEndOf="@+id/FeedBackConstraint"
-            app:layout_constraintBottom_toBottomOf="@+id/FeedBackConstraint"/>
+            app:layout_constraintTop_toTopOf="@+id/feed_back_cl"
+            app:layout_constraintStart_toStartOf="@+id/feed_back_cl"
+            app:layout_constraintEnd_toEndOf="@+id/feed_back_cl"
+            app:layout_constraintBottom_toBottomOf="@+id/feed_back_cl"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/EditFeedBack"
+            android:id="@+id/feedback_cl"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            app:layout_constraintTop_toBottomOf="@+id/FeedBackConstraint"
+            app:layout_constraintTop_toBottomOf="@+id/feed_back_cl"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
             <EditText
+                android:id="@+id/feedback_et"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="add notes here"
                 android:background="@drawable/feedback_edit_text"
-                app:layout_constraintTop_toBottomOf="@+id/EditFeedBack"
+                app:layout_constraintTop_toBottomOf="@+id/feedback_cl"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="@+id/EditFeedBack"/>
+                app:layout_constraintBottom_toBottomOf="@+id/feedback_cl"/>
 
 
 
@@ -214,7 +215,7 @@
         android:background="@drawable/feedback"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/FeedBackConstraint"
+        app:layout_constraintTop_toBottomOf="@+id/feed_back_cl"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>

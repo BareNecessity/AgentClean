@@ -8,7 +8,7 @@
     tools:context=".Request">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/RequestPanel"
+        android:id="@+id/request_panel_cl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/requestpanel"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/TextRequest"
+            android:id="@+id/request_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
@@ -26,7 +26,7 @@
             android:textColor="#2630a3"
             android:textSize="25sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/RequestPanel" />
+            app:layout_constraintTop_toTopOf="@+id/request_panel_cl" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -39,7 +39,7 @@
 
 
         <TextView
-            android:id="@+id/Ready"
+            android:id="@+id/ready_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -50,7 +50,7 @@
             android:textSize="20sp"
             android:textStyle="italic"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/TextRequest" />
+            app:layout_constraintTop_toTopOf="@+id/request_tv" />
 
         <TextView
             android:layout_width="match_parent"
@@ -60,26 +60,26 @@
             android:layout_marginBottom="35dp"
             android:text="Time 11:45am, 1 Dec, 2019"
             android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="@+id/RequestPanel"
+            app:layout_constraintBottom_toBottomOf="@+id/request_panel_cl"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Ready" />
+            app:layout_constraintTop_toBottomOf="@+id/ready_tv" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/PickupAddressConstraint"
+        android:id="@+id/pickup_address_cl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffff"
         android:layout_marginTop="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RequestPanel">
+        app:layout_constraintTop_toBottomOf="@+id/request_panel_cl">
 
         <TextView
-            android:id="@+id/PickUp"
+            android:id="@+id/pickup_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -90,7 +90,7 @@
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/PickupAddressConstraint" />
+            app:layout_constraintTop_toTopOf="@+id/pickup_address_cl" />
 
         <TextView
             android:layout_width="match_parent"
@@ -100,25 +100,25 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
-            app:layout_constraintTop_toBottomOf="@id/PickUp"
+            app:layout_constraintTop_toBottomOf="@id/pickup_tv"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="@+id/PickupAddressConstraint"/>
+            app:layout_constraintBottom_toBottomOf="@+id/pickup_address_cl"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/PickUpDateConstraint"
+        android:id="@+id/pickup_date_cl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffff"
         android:layout_marginTop="1dp"
-        app:layout_constraintTop_toBottomOf="@+id/PickupAddressConstraint"
+        app:layout_constraintTop_toBottomOf="@+id/pickup_address_cl"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
-            android:id="@+id/PDateTime"
+            android:id="@+id/date_and_time_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Pickup Date And Time"
@@ -127,7 +127,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            app:layout_constraintTop_toTopOf="@+id/PickUpDateConstraint"
+            app:layout_constraintTop_toTopOf="@+id/pickup_date_cl"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -140,7 +140,7 @@
             android:layout_marginBottom="20dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            app:layout_constraintTop_toBottomOf="@+id/PDateTime"
+            app:layout_constraintTop_toBottomOf="@+id/date_and_time_tv"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
@@ -148,17 +148,17 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/DeliveryDateConstraint"
+        android:id="@+id/delivery_date_cl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffff"
         android:layout_marginTop="1dp"
-        app:layout_constraintTop_toBottomOf="@+id/PickUpDateConstraint"
+        app:layout_constraintTop_toBottomOf="@+id/pickup_date_cl"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
-            android:id="@+id/TextViewDeliveryDate"
+            android:id="@+id/delivery_date_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Delivery Date And Time"
@@ -167,7 +167,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            app:layout_constraintTop_toTopOf="@id/DeliveryDateConstraint"
+            app:layout_constraintTop_toTopOf="@id/delivery_date_cl"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -179,7 +179,7 @@
             android:layout_marginBottom="20dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            app:layout_constraintTop_toBottomOf="@+id/TextViewDeliveryDate"
+            app:layout_constraintTop_toBottomOf="@+id/delivery_date_tv"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
@@ -187,17 +187,17 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/DryCleanerConstraint"
+        android:id="@+id/dry_cleaner_cl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffff"
         android:layout_marginTop="1dp"
-        app:layout_constraintTop_toBottomOf="@+id/DeliveryDateConstraint"
+        app:layout_constraintTop_toBottomOf="@+id/delivery_date_cl"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
-            android:id="@+id/TextViewDryCleaner"
+            android:id="@+id/dry_cleaner_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Drycleaner"
@@ -206,7 +206,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            app:layout_constraintTop_toTopOf="@+id/DryCleanerConstraint"
+            app:layout_constraintTop_toTopOf="@+id/dry_cleaner_cl"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -219,26 +219,26 @@
             android:layout_marginBottom="20dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            app:layout_constraintTop_toBottomOf="@+id/TextViewDryCleaner"
+            app:layout_constraintTop_toBottomOf="@+id/dry_cleaner_tv"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="@+id/DryCleanerConstraint"/>
+            app:layout_constraintBottom_toBottomOf="@+id/dry_cleaner_cl"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/SpecificationConstraint"
+        android:id="@+id/specifications_cl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffff"
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DryCleanerConstraint">
+        app:layout_constraintTop_toBottomOf="@+id/dry_cleaner_cl">
 
         <TextView
-            android:id="@+id/Gender"
+            android:id="@+id/gender_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -248,10 +248,10 @@
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/SpecificationConstraint" />
+            app:layout_constraintTop_toTopOf="@+id/specifications_cl" />
 
         <TextView
-            android:id="@+id/Trouser"
+            android:id="@+id/trouser_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -260,22 +260,22 @@
             android:text="6 trousers"
             android:textSize="17sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Gender" />
+            app:layout_constraintTop_toBottomOf="@+id/gender_tv" />
 
         <TextView
-            android:id="@+id/TrouserDetails"
+            android:id="@+id/trouser_details"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:text="(wash and iron)"
             android:textStyle="italic"
-            app:layout_constraintStart_toEndOf="@+id/Trouser"
-            app:layout_constraintTop_toTopOf="@+id/Trouser"
-            app:layout_constraintBottom_toBottomOf="@+id/Trouser"/>
+            app:layout_constraintStart_toEndOf="@+id/trouser_tv"
+            app:layout_constraintTop_toTopOf="@+id/trouser_tv"
+            app:layout_constraintBottom_toBottomOf="@+id/trouser_tv"/>
 
         <TextView
-            android:id="@+id/TrouserPrice"
+            android:id="@+id/trouser_price_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3,000"
@@ -283,11 +283,11 @@
             android:layout_marginEnd="40dp"
             android:layout_marginStart="40dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/Trouser"
-            app:layout_constraintBottom_toBottomOf="@id/Trouser"/>
+            app:layout_constraintTop_toTopOf="@id/trouser_tv"
+            app:layout_constraintBottom_toBottomOf="@id/trouser_tv"/>
 
         <TextView
-            android:id="@+id/Shirts"
+            android:id="@+id/shirts_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="12 Shirts"
@@ -296,35 +296,35 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/Trouser"/>
+            app:layout_constraintTop_toBottomOf="@id/trouser_tv"/>
 
 
         <TextView
-            android:id="@+id/ShirtDetails"
+            android:id="@+id/shirt_details_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="(wash and iron)"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            app:layout_constraintStart_toEndOf="@id/Shirts"
-            app:layout_constraintTop_toTopOf="@id/Shirts"
-            app:layout_constraintBottom_toBottomOf="@id/Shirts"/>
+            app:layout_constraintStart_toEndOf="@id/shirts_tv"
+            app:layout_constraintTop_toTopOf="@id/shirts_tv"
+            app:layout_constraintBottom_toBottomOf="@id/shirts_tv"/>
 
         <TextView
-            android:id="@+id/ShirtPrice"
+            android:id="@+id/shirt_price_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2,400"
             android:textSize="17sp"
             android:layout_marginStart="40dp"
             android:layout_marginEnd="40dp"
-            app:layout_constraintTop_toTopOf="@id/Shirts"
-            app:layout_constraintBottom_toBottomOf="@id/Shirts"
+            app:layout_constraintTop_toTopOf="@id/shirts_tv"
+            app:layout_constraintBottom_toBottomOf="@id/shirts_tv"
             app:layout_constraintEnd_toEndOf="parent"/>
 
 
         <TextView
-            android:id="@+id/Natives"
+            android:id="@+id/natives_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3 Natives"
@@ -332,34 +332,34 @@
             android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            app:layout_constraintTop_toBottomOf="@+id/Shirts"
+            app:layout_constraintTop_toBottomOf="@+id/shirts_tv"
             app:layout_constraintStart_toStartOf="parent"/>
 
         <TextView
-            android:id="@+id/NativeDetails"
+            android:id="@+id/native_details_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="(iron only)"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            app:layout_constraintTop_toTopOf="@id/Natives"
-            app:layout_constraintBottom_toBottomOf="@id/Natives"
-            app:layout_constraintStart_toEndOf="@+id/Natives"/>
+            app:layout_constraintTop_toTopOf="@id/natives_tv"
+            app:layout_constraintBottom_toBottomOf="@id/natives_tv"
+            app:layout_constraintStart_toEndOf="@+id/natives_tv"/>
 
         <TextView
-            android:id="@+id/NativePrice"
+            android:id="@+id/native_price_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1200"
             android:textSize="17sp"
             android:layout_marginStart="40dp"
             android:layout_marginEnd="40dp"
-            app:layout_constraintTop_toTopOf="@id/Natives"
-            app:layout_constraintBottom_toBottomOf="@id/Natives"
+            app:layout_constraintTop_toTopOf="@id/natives_tv"
+            app:layout_constraintBottom_toBottomOf="@id/natives_tv"
             app:layout_constraintEnd_toEndOf="parent"/>
 
         <TextView
-            android:id="@+id/Singlets"
+            android:id="@+id/singlet_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5 Singlets"
@@ -368,19 +368,19 @@
             android:layout_marginEnd="20dp"
             android:layout_marginTop="10dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Natives"
+            app:layout_constraintTop_toBottomOf="@+id/natives_tv"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
         <TextView
-            android:id="@+id/SingletDetails"
+            android:id="@+id/singlet_details_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="(wash only"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            app:layout_constraintStart_toEndOf="@+id/Singlets"
-            app:layout_constraintTop_toTopOf="@id/Singlets"
-            app:layout_constraintBottom_toBottomOf="@id/Singlets"/>
+            app:layout_constraintStart_toEndOf="@+id/singlet_tv"
+            app:layout_constraintTop_toTopOf="@id/singlet_tv"
+            app:layout_constraintBottom_toBottomOf="@id/singlet_tv"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -389,8 +389,8 @@
             android:textSize="17sp"
             android:layout_marginStart="40dp"
             android:layout_marginEnd="40dp"
-            app:layout_constraintTop_toTopOf="@id/Singlets"
-            app:layout_constraintBottom_toBottomOf="@id/Singlets"
+            app:layout_constraintTop_toTopOf="@id/singlet_tv"
+            app:layout_constraintBottom_toBottomOf="@id/singlet_tv"
             app:layout_constraintEnd_toEndOf="parent"/>
 
 
@@ -398,18 +398,18 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/Total"
+        android:id="@+id/total_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffff"
         android:layout_marginTop="1dp"
-        app:layout_constraintTop_toBottomOf="@+id/SpecificationConstraint"
+        app:layout_constraintTop_toBottomOf="@+id/specifications_cl"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <TextView
-            android:id="@+id/Subtotal"
+            android:id="@+id/subtotal_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Subtotal"
@@ -417,33 +417,33 @@
             android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            app:layout_constraintTop_toTopOf="@+id/Total"
+            app:layout_constraintTop_toTopOf="@+id/total_tv"
             app:layout_constraintStart_toStartOf="parent"/>
 
 
         <TextView
-            android:id="@+id/SubtotalPrice"
+            android:id="@+id/sub_total_price_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="#6,600"
             android:textSize="17sp"
             android:layout_marginEnd="40dp"
             android:layout_marginStart="40dp"
-            app:layout_constraintTop_toTopOf="@+id/Subtotal"
-            app:layout_constraintBottom_toBottomOf="@id/Subtotal"
+            app:layout_constraintTop_toTopOf="@+id/subtotal_tv"
+            app:layout_constraintBottom_toBottomOf="@id/subtotal_tv"
             app:layout_constraintEnd_toEndOf="parent"/>
 
         <TextView
-            android:id="@+id/Discount"
+            android:id="@+id/discount_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Discount/Promo Code"
             android:textSize="17sp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            app:layout_constraintTop_toBottomOf="@+id/Subtotal"
+            app:layout_constraintTop_toBottomOf="@+id/subtotal_tv"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="@+id/Total"/>
+            app:layout_constraintBottom_toBottomOf="@+id/total_tv"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -452,9 +452,9 @@
             android:textSize="17sp"
             android:layout_marginEnd="40dp"
             android:layout_marginStart="40dp"
-            app:layout_constraintTop_toTopOf="@id/Discount"
+            app:layout_constraintTop_toTopOf="@id/discount_tv"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="@+id/Discount"/>
+            app:layout_constraintBottom_toBottomOf="@+id/discount_tv"/>
 
 
 

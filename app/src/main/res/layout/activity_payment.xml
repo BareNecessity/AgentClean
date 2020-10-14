@@ -8,7 +8,7 @@
     tools:context=".Payment">
 
     <ImageView
-        android:id="@+id/PaymentBackArrow"
+        android:id="@+id/payment_back_arrow_img"
         android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/TextBack"
+        android:id="@+id/text_back_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Back"
@@ -29,12 +29,12 @@
         android:layout_marginTop="32dp"
         android:layout_marginStart="80dp"
         android:layout_marginEnd="80dp"
-        app:layout_constraintStart_toEndOf="@id/PaymentBackArrow"
+        app:layout_constraintStart_toEndOf="@id/payment_back_arrow_img"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:id="@+id/MakePaymentText"
+        android:id="@+id/make_payment_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Make Payment"
@@ -42,12 +42,12 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/TextBack"
+        app:layout_constraintTop_toBottomOf="@+id/text_back_tv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
-        android:id="@+id/TotalAmountText"
+        android:id="@+id/total_amount_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Total amount"
@@ -55,12 +55,12 @@
         android:layout_marginTop="15dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/MakePaymentText"
+        app:layout_constraintTop_toBottomOf="@+id/make_payment_tv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
-        android:id="@+id/PaymentPageTotalAmount"
+        android:id="@+id/payment_total_amount_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="#6,600"
@@ -70,12 +70,12 @@
         android:layout_marginTop="5dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/TotalAmountText"
+        app:layout_constraintTop_toBottomOf="@+id/total_amount_tv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
-        android:id="@+id/TextChoosePaymentMethod"
+        android:id="@+id/choose_payment_method_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Choose Payment Method"
@@ -84,12 +84,12 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/PaymentPageTotalAmount"
+        app:layout_constraintTop_toBottomOf="@+id/payment_total_amount_tv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
-        android:id="@+id/PaymentInstructions"
+        android:id="@+id/payment_instruction_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="You can split your order payments using the \n different methods of payment below"
@@ -97,26 +97,26 @@
         android:textStyle="bold"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/TextChoosePaymentMethod"
+        app:layout_constraintTop_toBottomOf="@+id/choose_payment_method_tv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/CashOnDeliveryConstraint"
+        android:id="@+id/cash_on_delivery_cl"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/payment"
         android:layout_marginTop="20dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/PaymentInstructions"
+        app:layout_constraintTop_toBottomOf="@+id/payment_instruction_tv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
         <CheckBox
-            android:id="@+id/CheckBoxPayment"
+            android:id="@+id/check_box_payment_cb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -126,7 +126,7 @@
             app:layout_constraintBottom_toBottomOf="parent"/>
 
         <TextView
-            android:id="@+id/TextCashOnDelivery"
+            android:id="@+id/cash_on_delivery_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cash on Delivery"
@@ -136,7 +136,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/CheckBoxPayment"/>
+            app:layout_constraintStart_toEndOf="@+id/check_box_payment_cb"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -156,19 +156,19 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/CardPaymentConstraint"
+        android:id="@+id/card_payment_cl"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/payment"
         android:layout_marginTop="10dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/CashOnDeliveryConstraint"
+        app:layout_constraintTop_toBottomOf="@+id/cash_on_delivery_cl"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
         <CheckBox
-            android:id="@+id/CheckBoxCardPayment"
+            android:id="@+id/check_box_card_payment_cb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -178,7 +178,7 @@
             app:layout_constraintBottom_toBottomOf="parent"/>
 
         <TextView
-            android:id="@+id/TextCard"
+            android:id="@+id/card_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Card"
@@ -188,7 +188,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/CheckBoxCardPayment"/>
+            app:layout_constraintStart_toEndOf="@+id/check_box_card_payment_cb"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -210,19 +210,19 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/WalletPaymentConstraint"
+        android:id="@+id/wallet_payment_cl"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/payment"
         android:layout_marginTop="10dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/CardPaymentConstraint"
+        app:layout_constraintTop_toBottomOf="@+id/card_payment_cl"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
         <CheckBox
-            android:id="@+id/CheckBoxWallet"
+            android:id="@+id/check_box_wallet_cb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -232,7 +232,7 @@
             app:layout_constraintBottom_toBottomOf="parent"/>
 
         <TextView
-            android:id="@+id/TextWallet"
+            android:id="@+id/wallet_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Wallet"
@@ -242,7 +242,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/CheckBoxWallet"/>
+            app:layout_constraintStart_toEndOf="@+id/check_box_wallet_cb"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -253,26 +253,26 @@
             android:text="#2,600"
             android:textSize="17sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/WalletPaymentConstraint"
-            app:layout_constraintTop_toTopOf="@id/WalletPaymentConstraint" />
+            app:layout_constraintEnd_toEndOf="@+id/wallet_payment_cl"
+            app:layout_constraintTop_toTopOf="@id/wallet_payment_cl" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/CouponDiscountConstraint"
+        android:id="@+id/coupon_discount_cl"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/coupon"
         android:layout_marginTop="10dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/WalletPaymentConstraint"
+        app:layout_constraintTop_toBottomOf="@+id/wallet_payment_cl"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
 
         <CheckBox
-            android:id="@+id/CheckBoxCoupon"
+            android:id="@+id/check_box_coupon_cb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -283,7 +283,7 @@
 
 
         <TextView
-            android:id="@+id/TextCouponDiscount"
+            android:id="@+id/coupon_discount_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Coupon/Discount Code"
@@ -293,7 +293,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/CheckBoxCoupon"/>
+            app:layout_constraintStart_toEndOf="@+id/check_box_coupon_cb"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -310,13 +310,13 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@id/EnterCouponConstraint"
+        android:id="@id/input_coupon_cl"
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:background="@drawable/payment"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        app:layout_constraintTop_toBottomOf="@id/CouponDiscountConstraint"
+        app:layout_constraintTop_toBottomOf="@id/coupon_discount_cl"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
@@ -324,7 +324,7 @@
 
 
         <TextView
-            android:id="@+id/TextEnterCouponCode"
+            android:id="@+id/enter_coupon_code_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Enter Discount/Coupon Code"
@@ -333,13 +333,13 @@
             android:layout_marginTop="15dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            app:layout_constraintTop_toTopOf="@+id/EnterCouponConstraint"
+            app:layout_constraintTop_toTopOf="@+id/input_coupon_cl"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
 
         <EditText
-            android:id="@+id/EditTextEnterCode"
+            android:id="@+id/enter_code_et"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:hint="  XDC-37723"
@@ -347,7 +347,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            app:layout_constraintTop_toBottomOf="@+id/TextEnterCouponCode"
+            app:layout_constraintTop_toBottomOf="@+id/enter_coupon_code_tv"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -360,7 +360,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            app:layout_constraintTop_toBottomOf="@id/EditTextEnterCode"
+            app:layout_constraintTop_toBottomOf="@id/enter_code_et"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
