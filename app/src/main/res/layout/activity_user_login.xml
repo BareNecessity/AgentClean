@@ -124,6 +124,7 @@
             app:layout_constraintTop_toBottomOf="@+id/password_login_et"/>
 
         <TextView
+            android:id="@+id/forgot_password_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Forgot passwprd?"
@@ -132,7 +133,7 @@
             android:layout_marginStart="110dp"
             android:layout_marginLeft="110dp"
             app:layout_constraintStart_toEndOf="@+id/remember_me_tv"
-            app:layout_constraintTop_toBottomOf="@+id/EditPasswordLogin"
+            app:layout_constraintTop_toBottomOf="@+id/password_login_et"
             app:layout_constraintEnd_toEndOf="@id/login_cl"/>
 
         <Button

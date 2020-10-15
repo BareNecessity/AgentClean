@@ -104,7 +104,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/extra_cl">
 
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/add_wallet_img_bt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

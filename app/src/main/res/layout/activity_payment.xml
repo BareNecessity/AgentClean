@@ -352,6 +352,7 @@
             app:layout_constraintEnd_toEndOf="parent"/>
 
         <Button
+            android:id="@+id/add_to_cart_bt"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="@drawable/button_bg"
