@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class UserLogin extends AppCompatActivity {
     Button myButton;
     ImageView backArrow;
-    CheckBox checkBox;
+    CheckBox checkBox
     TextView forgotPassword, accountCreate;
 
 
@@ -25,6 +25,9 @@ public class UserLogin extends AppCompatActivity {
         forgotPassword = findViewById(R.id.forgot_password_tv);
         backArrow = findViewById(R.id.back_arrow_4_img);
         accountCreate = findViewById(R.id.account_create_tv);
+        checkBox = findViewById(R.id.checkbox_cb);
+
+
 
 
     }

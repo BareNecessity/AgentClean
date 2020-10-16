@@ -101,16 +101,16 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/password_login_tv"/>
 
-        <ImageView
-            android:id="@+id/checkbox_img"
+        <CheckBox
+            android:id="@+id/checkbox_cb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_baseline_check_box_outline_blank_24"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/password_login_et"
-            android:background="@drawable/ic_baseline_check_box_outline_blank_24"/>
+            app:layout_constraintTop_toBottomOf="@id/password_login_et" />
 
         <TextView
             android:id="@+id/remember_me_tv"
@@ -120,7 +120,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            app:layout_constraintStart_toEndOf="@+id/checkbox_img"
+            app:layout_constraintStart_toEndOf="@+id/checkbox_cb"
             app:layout_constraintTop_toBottomOf="@+id/password_login_et"/>
 
         <TextView
