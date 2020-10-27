@@ -21,6 +21,11 @@ public class UserLoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_login);
+
+        setViews();
+    }
+
+    private void setViews() {
         myButton = findViewById(R.id.login_button_bt);
         forgotPassword = findViewById(R.id.forgot_password_tv);
         backArrow = findViewById(R.id.back_arrow_4_img);
