@@ -13,11 +13,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class UserLoginActivity extends AppCompatActivity {
-    Button loginButton;
-    ImageView backArrow;
+    Button loginBtn;
+    ImageView backArrowImg;
     EditText emailLogin, passwordLogin;
-    CheckBox checkBox;
-    TextView forgotPassword, accountCreate;
+    CheckBox checkBoxCb;
+    TextView forgotPasswordTv, accountCreateTv;
 
 
 
@@ -31,15 +31,15 @@ public class UserLoginActivity extends AppCompatActivity {
     }
 
     private void setViews() {
-        loginButton = findViewById(R.id.login_button_bt);
-        forgotPassword = findViewById(R.id.forgot_password_tv);
-        backArrow = findViewById(R.id.back_arrow_4_img);
-        accountCreate = findViewById(R.id.account_create_tv);
-        checkBox = findViewById(R.id.checkbox_cb);
+        loginBtn = findViewById(R.id.login_button_bt);
+        forgotPasswordTv = findViewById(R.id.forgot_password_tv);
+        backArrowImg = findViewById(R.id.back_arrow_4_img);
+        accountCreateTv = findViewById(R.id.account_create_tv);
+        checkBoxCb = findViewById(R.id.checkbox_cb);
         emailLogin = findViewById(R.id.email_login_et);
         passwordLogin = findViewById(R.id.password_login_et);
 
-        loginButton.setOnClickListener(new View.OnClickListener() {
+        loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String email = getEmail();
@@ -52,7 +52,7 @@ public class UserLoginActivity extends AppCompatActivity {
             }
         });
 
-        forgotPassword.setOnClickListener(new View.OnClickListener() {
+        forgotPasswordTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -61,14 +61,14 @@ public class UserLoginActivity extends AppCompatActivity {
 
 
 
-        accountCreate.setOnClickListener(new View.OnClickListener() {
+        accountCreateTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
             }
         });
 
-        backArrow.setOnClickListener(new View.OnClickListener() {
+        backArrowImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
