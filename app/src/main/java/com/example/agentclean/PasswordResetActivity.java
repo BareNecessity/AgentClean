@@ -6,13 +6,15 @@ import android.accounts.Account;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class PasswordResetActivity extends AppCompatActivity {
-    Button myButton;
+    Button resetPassword;
     TextView accountCreate;
-    ImageView backArrow;
+    ImageView backArrowReset;
+    EditText newPassword, confirmNewPassword;
 
 
     @Override
@@ -24,11 +26,13 @@ public class PasswordResetActivity extends AppCompatActivity {
     }
 
     private void setViews() {
-        myButton = findViewById(R.id.reset_bt);
+        resetPassword = findViewById(R.id.reset_bt);
         accountCreate = findViewById(R.id.create_account_tv);
-        backArrow = findViewById(R.id.back_arrow_img);
+        backArrowReset = findViewById(R.id.back_arrow_img);
+        newPassword = findViewById(R.id.password_et);
+        confirmNewPassword = findViewById(R.id.confirm_password_et);
 
-       myButton.setOnClickListener(new View.OnClickListener() {
+       resetPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -41,7 +45,7 @@ public class PasswordResetActivity extends AppCompatActivity {
 
             }
         });
-       backArrow.setOnClickListener(new View.OnClickListener() {
+       backArrowReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
