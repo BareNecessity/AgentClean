@@ -10,6 +10,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class UserLoginActivity extends AppCompatActivity {
     Button loginButton;
@@ -41,6 +42,11 @@ public class UserLoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (areDetailsValid()){
+
+                }else{
+                    Toast.makeText(getApplicationContext(),"Invalid input", Toast.LENGTH_SHORT).show();
+                }
 
             }
         });
@@ -71,5 +77,14 @@ public class UserLoginActivity extends AppCompatActivity {
 
 
 
+    }
+
+    private boolean areDetailsValid() {
+        if (emailLogin.getText().toString().isEmpty() || passwordLogin.getText().toString().length() < 6){
+            return false;
+        }
+        else{
+            return true;
+        }
     }
 }
