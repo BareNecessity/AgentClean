@@ -5,7 +5,7 @@
     android:background="#e6e9ed"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Request">
+    tools:context=".RequestActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/request_panel_cl"

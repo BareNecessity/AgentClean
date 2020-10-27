@@ -8,7 +8,7 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class UserLogin extends AppCompatActivity {
+public class UserLoginActivity extends AppCompatActivity {
     Button myButton;
     ImageView backArrow;
     CheckBox checkBox;

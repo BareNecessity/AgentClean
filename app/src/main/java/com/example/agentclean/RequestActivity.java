@@ -3,15 +3,12 @@ package com.example.agentclean;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.ImageView;
 
-public class Wallet extends AppCompatActivity {
-    ImageView fundWallet;
+public class RequestActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wallet);
-        fundWallet = findViewById(R.id.add_wallet_img_bt);
+        setContentView(R.layout.activity_request);
     }
 }
