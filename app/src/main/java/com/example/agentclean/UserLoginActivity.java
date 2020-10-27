@@ -42,6 +42,7 @@ public class UserLoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String email = getEmail();
                 if (areDetailsValid()){
 
                 }else{
@@ -77,6 +78,10 @@ public class UserLoginActivity extends AppCompatActivity {
 
 
 
+    }
+
+    private String getEmail() {
+        return emailLogin.getText().toString();
     }
 
     private boolean areDetailsValid() {
