@@ -2,6 +2,7 @@ package com.example.agentclean;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,7 +22,23 @@ public class LandingPageActivity extends AppCompatActivity {
         newUser = findViewById(R.id.new_user_bt);
         existingUser =findViewById(R.id.existing_user_bt);
 
-        newUser.setOnClickListener(new View.OnClickListener());
+        newUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), CreateAccountActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+        existingUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), UserLoginActivity.class);
+                startActivity(intent);
+
+            }
+        });
     }
 
 }
