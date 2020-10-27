@@ -42,6 +42,7 @@ public class UserLoginActivity extends AppCompatActivity {
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String email1 = emailLogin.getText().toString();
                 String email = getEmail();
                 if (areDetailsValid()){
 
