@@ -5,7 +5,7 @@
     android:background="#e6e9ed"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Payment">
+    tools:context=".PaymentActivity">
 
     <ImageView
         android:id="@+id/payment_back_arrow_img"

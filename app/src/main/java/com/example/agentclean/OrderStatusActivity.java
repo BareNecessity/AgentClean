@@ -5,13 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 
-public class Payment extends AppCompatActivity {
-    Button myButton;
+public class OrderStatusActivity extends AppCompatActivity {
+    Button viewOrder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_payment);
-        myButton = findViewById(R.id.add_to_cart_bt);
+        setContentView(R.layout.activity_order_status);
+        viewOrder = findViewById(R.id.view_order_status_bt);
     }
 }

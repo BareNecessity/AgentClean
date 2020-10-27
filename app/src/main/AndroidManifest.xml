@@ -9,16 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LaundryRecords"></activity>
-        <activity android:name=".OrderStatus" />
+        <activity android:name=".LaundryRecordsActivity"></activity>
+        <activity android:name=".OrderStatusActivity" />
         <activity android:name=".Wallet" />
-        <activity android:name=".Payment" />
+        <activity android:name=".PaymentActivity" />
         <activity android:name=".Request" />
         <activity android:name=".Settings" />
         <activity android:name=".UserLogin" />
-        <activity android:name=".CreateAccount" />
-        <activity android:name=".Background" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".CreateAccountActivity" />
+        <activity android:name=".PasswordResetActivity"/>
+        <activity android:name=".BackgroundActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

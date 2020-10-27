@@ -7,7 +7,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class LaundryRecords extends AppCompatActivity {
+public class LaundryRecordsActivity extends AppCompatActivity {
     TextView fundWallet;
     ImageView newRequest;
 

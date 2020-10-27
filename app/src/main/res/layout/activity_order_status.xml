@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#e6e9ed"
-    tools:context=".OrderStatus">
+    tools:context=".OrderStatusActivity">
 
     <TextView
         android:id="@+id/thanks_tv"
