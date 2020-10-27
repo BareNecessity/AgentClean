@@ -37,7 +37,7 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <Button
-            android:id="@+id/NewUser"
+            android:id="@+id/new_user_bt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -52,11 +52,11 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintBottom_toTopOf="@+id/existing_user_bt"
             app:layout_constraintTop_toTopOf="@+id/LandingConstraint" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/existing_user_bt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
